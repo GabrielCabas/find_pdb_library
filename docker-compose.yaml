@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  pdb:
+    image: pdb
+    container_name: pdb
+    build:
+      context: ./
+    restart: on-failure
+    volumes:
+      - ./src:/src
